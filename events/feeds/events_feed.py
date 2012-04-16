@@ -16,5 +16,5 @@ class EventsFeed(Feed):
         return item.description
 
     def item_link(self, item):
-        return 'http://www.irefactor.net/'
+        return 'http://israel.softwarecraftsmanship.org/'
 
