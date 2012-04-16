@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block events_is_active %} class="active" {% endblock %}
+
+{% block  details %}
+
+    {% for event in previousEvents %}
+
+        <div class="container box-inner">
+
+            {% include "event.html" %}
+        <br />
+
+        <h3>Links:</h3>
+        {% for link in event.link_set.all %}
+            <ul>
+                <li><a href="{{ link.uri }}">{{ link.description }}</a></li>
+            </ul>
+        {% endfor %}
+
+        </div>
+
+    {% endfor %}
+
+{% endblock %}

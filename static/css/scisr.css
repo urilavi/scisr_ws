@@ -1,0 +1,72 @@
+body
+{
+	background-image: url(../img/random_grey_variations.png);
+	background-repeat: repeat;
+}
+header a, header a:hover
+{
+	text-decoration: none;
+}
+.navbar .nav > li > a
+{
+	color: #E9EAED;
+}
+header h2
+{
+	font-family: Chunkfive-webfont;
+	color: #E9EAED; /*#BECACA;*/
+	text-shadow: 0px 1px #292C32;
+	padding: 7px 0px 0px 0px;
+	font-weight: normal;
+	line-height: 27px;
+	float: left;
+}
+header.navbar .navbar-inner .nav
+{
+	float: right;
+	margin: 0px;
+}
+.nav .active
+{
+	background-color: #292C32;
+}
+
+.box-inner
+{
+	background-color: #EEF1F1;
+	line-height: 1.6em;
+	font-size: 16px;
+	padding: 10px 25px 10px 25px;
+    margin-top: 72px;
+	-webkit-box-shadow: 0px 0px 4px 0px #ffffff;
+	-moz-box-shadow: 0px 0px 4px 0px #ffffff;
+	box-shadow: 0px 0px 4px 0px #ffffff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.navbar-inner
+{
+	/*background-color:#737D8C;    background-image: -moz-linear-gradient(top, #737D8C, #454B54);   background-image: -ms-linear-gradient(top, #737D8C, #454B54);   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#737D8C), to(#454B54));   background-image: -webkit-linear-gradient(top, #737D8C, #454B54);   background-image: -o-linear-gradient(top, #737D8C, #454B54);   background-image: linear-gradient(top, #737D8C, #454B54);   background-repeat: repeat-x;   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#737D8C', endColorstr='#454B54', GradientType=0);          */
+	background-color: #454B54;
+	background-image: -moz-linear-gradient(top, #454B54, #2E3238);
+	background-image: -ms-linear-gradient(top, #454B54, #2E3238);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#454B54), to(#2E3238));
+	background-image: -webkit-linear-gradient(top, #454B54, #2E3238);
+	background-image: -o-linear-gradient(top, #454B54, #2E3238);
+    background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#454B54', endColorstr='#2E3238', GradientType=0);
+}
+.schedule b{padding-right: 10px;}
+.schedule li{line-height:1.6em;}
+.event .details{font-size: 0.9em; margin-left:60px;}
+.event h1{margin: 15px 0px 15px 0px;}
+
+.feed
+{
+    margin-top: 12px;
+    margin-left: 5px;
+    background-image: url("../img/feed-icon-14x14.png");
+    background-repeat: no-repeat;
+}

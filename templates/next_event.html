@@ -1,0 +1,13 @@
+{% extends "base_container.html" %}
+
+{% block home_is_active %} class="active" {% endblock %}
+
+{% block  data %}
+
+    <h3>Next Event:</h3>
+
+    <br />
+
+    {% include "event.html" %}
+
+{% endblock %}
