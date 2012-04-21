@@ -4,13 +4,12 @@ from django.db import models
 class Event(models.Model):
     '''
     Event class represents Software Craftsmanship Events.
-    The description field will be disabled for HTML escaping in order to allow HTML input
     '''
     number      = models.IntegerField()
     title       = models.CharField(max_length=200)
     description = models.TextField()
     schedule    = models.TextField()
-    epilogue    = models.CharField(max_length=200)
+    epilogue    = models.CharField(max_length=200, blank=True)
     start_date  = models.DateTimeField()
     end_date    = models.DateTimeField()
     location    = models.CharField(max_length=300)
@@ -25,4 +24,10 @@ class Link(models.Model):
     
     def __unicode__(self):
         return 'Event Number: {0}, link to {1}'.format(self.event.number, self.uri)
-    
+
+class Tickets(models.Model):
+    event       = models.OneToOneField(Event)
+    data        = models.TextField()
+
+    def __unicode__(self):
+        return 'Event Number: {0} Tickets details'.format(self.event.number)

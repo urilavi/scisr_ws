@@ -10,4 +10,11 @@
 
     {% include "event.html" %}
 
+    {% if event.tickets %}
+
+        <br />
+        {{ event.tickets.data|safe }}
+
+    {% endif %}
+
 {% endblock %}
