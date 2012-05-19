@@ -38,11 +38,11 @@
     {% endblock %}
 
 	<footer>
-        <div class="navbar">
-        </div>
+        {% block social %}
+        {% endblock %}
 	</footer>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="/static/js/libs/jquery-1.7.0.min.js"><\/script>')</script>
 	<!-- scripts concatenated and minified via ant build script-->
 	<script defer src="/static/js/plugins.js"></script>
@@ -78,7 +78,6 @@
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
-
     </script>
 </body>
 </html>

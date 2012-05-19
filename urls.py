@@ -7,8 +7,9 @@ admin.autodiscover()
 urlpatterns = patterns('events.views',
     url(r'^$', 'next_event', name='nextEvent'),
     url(r'^events/$', 'previous_events', name='previousEvents'),
-    url(r'^events/rss/$', EventsFeed()),
+    url(r'^events/rss/$', 'feedburner_events'),
     url(r'^about/$', 'about', name='about'),
+    # url(r'^events/rss/$', EventsFeed()),
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 )

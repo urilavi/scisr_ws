@@ -8,6 +8,8 @@
 
         <div class="container box-inner">
 
+            <a name="{{ event.number }}"></a>
+
             {% include "event.html" %}
 
             {% if event.link_set.all|length > 0 %}
@@ -26,4 +28,8 @@
 
     {% endfor %}
 
+{% endblock %}
+
+{% block social %}
+    <div class="navbar"></div>
 {% endblock %}

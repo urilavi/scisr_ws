@@ -16,5 +16,5 @@ class EventsFeed(Feed):
         return item.description
 
     def item_link(self, item):
-        return 'http://israel.softwarecraftsmanship.org/'
+        return '{0}{1}'.format('http://israel.softwarecraftsmanship.org/events/#', item.number)
 
