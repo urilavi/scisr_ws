@@ -7,7 +7,7 @@ class EventsFeed(Feed):
     description         = 'Software Craftsmanship In Israel Events Feed'
 
     def items(self):
-        return Event.objects.all().order_by('-number')
+        return Event.objects.all().order_by('-number')[:5]
 
     def item_title(self, item):
         return 'Meeting {0}: {1}'.format(item.number, item.title)

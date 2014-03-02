@@ -1,4 +1,6 @@
 from events.models import Event
+from events.feeds.events_feed import EventsFeed
+
 from django.shortcuts import render_to_response
 from django.http import HttpResponsePermanentRedirect
 
@@ -15,6 +17,6 @@ def about(request):
 
 def feedburner_events(request):
     if request.META['HTTP_USER_AGENT'].startswith('FeedBurner'):
-        return EventsFeed(request)
+        return EventsFeed()
     else:
         return HttpResponsePermanentRedirect('http://feeds.feedburner.com/SCISR-Events')
